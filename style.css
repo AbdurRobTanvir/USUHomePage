@@ -10,7 +10,7 @@ hr{
 }
 .header i{
     font-size: 20px;
-    line-height: 30px;
+    line-height: 28px;
 }
 .header a{
     display: block;
@@ -24,8 +24,11 @@ hr{
 }
 #hidden_bar{
     float: left;
-    margin-right: 24px;
     display: none;
+}
+#search_icon{
+    float: left;
+    padding-right: 24px;
 }
 .search-bar{
     width: 270px;
@@ -39,7 +42,7 @@ border: none;
 }
 .search-bar-icon{
     position: absolute;
-    right: 5%;
+    right: 4%;
     bottom: 0
 }
 .membership-bg{
@@ -96,6 +99,17 @@ border: none;
 .card-title{
     min-height: 40px;
 }
+.card-link{
+    width: 200px;
+}
+.card a{
+    display: block;
+    text-decoration: none !important;
+    color: #ffffff;
+}
+.card a:hover{
+    color: #ffffff;
+}
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -115,13 +129,16 @@ border: none;
     display: block;
     text-decoration: none !important;
 }
+.carousel-link{
+    width: 300px;
+}
 .web-icons img{
     width: 145px;
 }
 .black-bg{
     background-color: #000;
 }
-.footer .platform a{
+.platform a{
     display: block;
 }
  .platform i{

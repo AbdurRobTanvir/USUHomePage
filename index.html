@@ -14,18 +14,23 @@
 </head>
 
 <body>
+    <!-- ##########  HEDER  ########## -->
     <div class=" header bg-warning">
         <div class="container clearfix py-4">
-            <img class="float-left" src="images/usu_logo.png" height="30px" width="100px">
+            <img class="float-left" src="images/usu_logo.png" alt="Logo">
             <div class="headear-logo float-right clearfix">
-                <a class="float-left pr-4" href="#">
-                    <i onclick="firstFunction()" class="fa-solid fa-magnifying-glass"></i>
-                </a>
+                <div id="search_icon">
+                    <a href="#">
+                        <i onclick="firstFunction()" class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
                 <div id="hidden_bar">
                     <div class=" search-bar bg-warning">
                         <input type="text" class="search-bar-value bg-warning">
                         <div class="search-bar-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#">
+                                <i onclick="secondFunction()" class="fa-solid fa-magnifying-glass"></i>
+                            </a>
                         </div>
 
                     </div>
@@ -135,8 +140,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- Experment on hidden element -->
-                <!-- <div class="row">
+            </div>
+        </div>
+    </div>
+    <!-- Experment on hidden element -->
+
+    <!-- <div id="hidden_element">
+        <div class="black-bg pb-5 pt-4">
+            <div class="container text-light">
+                <div class="row">
                     <div class="col-sm-3 col-md-4 col-xl-3 mt-4">
                         <h4 class="mb-4">About Us</h4>
                         <div class="mb-3">Our Student Board</div>
@@ -219,10 +231,13 @@
                             </a>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <!-- ########## HEADER END ########## -->
+
+    <!-- ########## First carousel ########## -->
     <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -235,7 +250,7 @@
                 <div class="carousel-caption text-center text-light mb-5">
                     <h1 class="carousel-heading">USU COVID-19 UPDATE</h1>
                     <a href="#">
-                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5" style="width: 300px;">READ LATEST UPDATE
+                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">READ LATEST UPDATE
                         </h5>
                     </a>
                 </div>
@@ -245,7 +260,7 @@
                 <div class="carousel-caption text-center text-light mb-5">
                     <h1 class="carousel-heading">MEMBERSHIP</h1>
                     <a href="#">
-                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5" style="width: 300px;">JOIN NOW</h5>
+                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">JOIN NOW</h5>
                     </a>
                 </div>
             </div>
@@ -254,12 +269,15 @@
                 <div class="carousel-caption text-center text-light mb-5">
                     <h1 class="carousel-heading">BOARD NOMINATIONS OPEN</h1>
                     <a href="#">
-                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5" style="width: 300px;">NOMINATE NOW</h5>
+                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">NOMINATE NOW</h5>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ##########  First carousel End ########## -->
+
+    <!-- ########## First Promotion ########## -->
     <div class="mobile-promotion py-5 my-5 bg-light">
         <div class="mobile-promotion-bg">
         </div>
@@ -278,13 +296,18 @@
             </div>
         </div>
     </div>
+    <!-- ########## First Promotion End ########## -->
+
+    <!-- ########### First Club card deck ########### -->
     <div class="container">
         <div class="card-deck">
             <div class="card">
                 <div class="membership-bg">
                     <div class="card-body text-center text-light">
                         <h1 class="mt-5 pt-4">MEMBERSHIP</h1>
-                        <h5 class="black-bg py-3 mx-auto my-5" style="width: 200px;">JOIN/ RENEW</h5>
+                        <a href="#">
+                            <h5 class="black-bg py-3 mx-auto my-5 card-link">JOIN/ RENEW</h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -292,13 +315,17 @@
                 <div class="clubandsocieties-bg">
                     <div class="card-body text-center text-light">
                         <h1 class="mt-5 pt-4">CLUB & SOCIETIES</h1>
-                        <h5 class="black-bg py-3 mx-auto my-5" style="width: 200px;">FIND OUT MORE</h5>
+                        <a href="#">
+                            <h5 class="black-bg py-3 mx-auto my-5 card-link">FIND OUT MORE</h5>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ########### First Club card deck End ########### -->
 
+    <!-- ########### First University Explore card ########## -->
     <div class="container">
         <div class="card-deck my-4">
             <div class="card">
@@ -335,19 +362,27 @@
             </div>
         </div>
     </div>
+    <!-- ########### First University Explore card End ########## -->
+
+    <!-- ########## Embed Video ########## -->
     <div class="container my-5">
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RhP849q5Dyg"
                 allowfullscreen></iframe>
         </div>
     </div>
+    <!-- ########## Embed Video END ########## -->
+
+    <!-- ########### Second Club card deck ########### -->
     <div class="container">
         <div class="card-deck">
             <div class="card">
                 <div class="studentboard-bg">
                     <div class="card-body text-center text-light">
                         <h1 class="mt-5 pt-4">OUR STUDENT BOARD</h1>
-                        <h5 class="black-bg py-3 mx-auto my-5" style="width: 200px;">FIND OUT MORE</h5>
+                        <a href="#">
+                            <h5 class="black-bg py-3 mx-auto my-5 card-link">FIND OUT MORE</h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -355,12 +390,17 @@
                 <div class="volunteer-bg">
                     <div class="card-body text-center text-light">
                         <h1 class="mt-5 pt-4">VOLUNTEER</h1>
-                        <h5 class="black-bg py-3 mx-auto my-5" style="width: 200px;">APPLY NOW</h5>
+                        <a href="#">
+                            <h5 class="black-bg py-3 mx-auto my-5 card-link">APPLY NOW</h5>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ########### Second Club card deck End ########### -->
+
+    <!-- ########### Second University Explore card ########## -->
     <div class="container">
         <div class="card-deck my-4">
             <div class="card">
@@ -401,6 +441,9 @@
             </div>
         </div>
     </div>
+    <!-- ########### Second University Explore card End ########## -->
+
+    <!-- ########## Second carousel ########## -->
     <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -412,7 +455,7 @@
                 <div class="carousel-caption text-center text-light mb-5">
                     <h1 class="carousel-heading">USYD STORE</h1>
                     <a href="#">
-                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5" style="width: 300px;">SHOP NOW</h5>
+                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">SHOP NOW</h5>
                     </a>
                 </div>
             </div>
@@ -421,12 +464,14 @@
                 <div class="carousel-caption text-center text-light mb-5">
                     <h1 class="carousel-heading">MEMBERSHIP</h1>
                     <a href="#">
-                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5" style="width: 300px;">JOIN NOW</h5>
+                        <h5 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">JOIN NOW</h5>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ########## Second carousel End ########## -->
+
     <!-- ########## WEB ICONS ########## -->
     <div class="web-icons container">
         <div class="row mt-5">
@@ -457,6 +502,8 @@
         </div>
     </div>
     <!-- ########### WEB ICONS ENDS ########## -->
+
+    <!-- ########## Promotion ########### -->
     <div class="mobile-promotion py-5 my-5 bg-light">
         <div class="mobile-promotion-bg">
         </div>
@@ -475,6 +522,8 @@
             </div>
         </div>
     </div>
+    <!-- ########## Promotion  End########### -->
+
     <!-- ########## FOOTER ########## -->
     <div class="footer black-bg py-5">
         <div class="container text-light">
@@ -500,10 +549,10 @@
                     <div class="mb-3">Download our app</div>
                     <div class="clearfix">
                         <a href="#">
-                            <img class="float-left pr-4" src="images/app_store.png">
+                            <img class="float-left pr-4" src="images/app_store.png" alt="app store">
                         </a>
                         <a href="#">
-                            <img class="float-left" src="images/play_store.png">
+                            <img class="float-left" src="images/play_store.png" alt="play store">
                         </a>
                     </div>
                     <hr />
@@ -575,6 +624,9 @@
                 isClicked = true;
             }
         }
+        document
+            .querySelector("#search_icon")
+            .addEventListener('click', ev => ev.target.style.display = "none");
     </script>
 
 </body>
