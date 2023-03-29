@@ -1,0 +1,233 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+.black-bg{
+    background-color: #000000;
+}
+.club-card .card-element{
+    position: relative;
+}
+.club-card img{
+    width: 100%;
+}
+.club-card .details{
+    width: 93%;
+    position: absolute;
+    bottom: 5%;
+}
+.club-card a{
+    display: block;
+    text-decoration: none !important;
+    color: #ffffff;
+}
+.club-card a:hover{
+    color: #ffffff;
+}
+.club-card .card-link{
+    width: 200px;
+}
+.explore-card{
+    position: relative !important;
+}
+.explore-card img{
+    width: 100%;
+}
+.explore-card i{
+    position: absolute;
+    bottom: 4%;
+    right: 8%;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+}
+.carousel-heading{
+    font-size: 29px;
+}
+.carousel-caption{
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.carousel-caption a{
+    display: block;
+    text-decoration: none !important;
+}
+.carousel-link{
+    width: 200px;
+}
+.mobile-web-icon{
+    display: none;
+}
+.mobile-promotion{
+    display: block;
+}
+.mobile-promotion-bg{
+    background-image: url(images/Web-Mob-750x280.png);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.desktop-promotion{
+    display: none;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.desktop-promotion-bg{
+    background-image: url(images/Web-Desktop1080x180.png);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.tablet-promotion{
+    display: none;
+}
+.tablet-promotion-bg{
+    background-image: url(images/Web-Desktop1080x180.png);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.platform a{
+    display: block;
+}
+ .platform i{
+    font-size: 30px;
+    color: #ffffff;
+}
+.footer .bottom{
+    font-size: 15px;
+    color: #c5c5c5;
+}
+hr{
+    border-top: 1px solid #ffffff !important;
+}
+@media screen and (max-width: 576px) {
+    .embed-video{
+        padding: 0 !important;
+    }
+    .club-card .card-element{
+        padding: 0;
+    }
+    .large-explore-card{
+        display: none;
+    }
+    .large-carousel{
+        display: none;
+    }
+    .mobile-web-icon{
+        display: block;
+    }
+    .web-icon{
+        display: none;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .large-carousel{
+        display: none;
+    }
+    .mobile-explore-card{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .club-card .details{
+        bottom: 0;
+        top: 4%;
+    }
+    .mobile-explore-card{
+        display: none;
+    }
+    .large-explore-card .details{
+        min-height: 65px;
+    }
+    .large-carousel{
+        display: none;
+    }
+    .carousel-heading{
+        font-size: 55px;
+    }
+    .carousel-caption{
+        margin-bottom: 225px;
+    }
+    .carousel-link{
+        width: 280px;
+    }
+    .mobile-promotion{
+        display: none;
+    }
+    .tablet-promotion{
+        display: block;
+    }
+    .horizontal-line{
+        display: none;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+    .mobile-explore-card{
+        display: none;
+    }
+    .large-explore-card .title{
+        min-height: 70px;
+    }
+    .large-explore-card .details{
+        min-height: 110px;
+    }
+    .carousel-heading{
+        font-size: 67px;
+    }
+    .carousel-link{
+        width: 380px;
+    }
+    .carousel-caption{
+        margin-bottom: 20px;
+    }
+    .mobile-carousel{
+        display: none;
+    }
+    .mobile-promotion{
+        display: none;
+    }
+    .tablet-promotion{
+        display: block;
+    }
+    .horizontal-line{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .club-card .details{
+        bottom: 15%;
+    }
+    .mobile-explore-card{
+        display: none;
+    }
+    .large-explore-card .details{
+        min-height: 90px;
+    }
+    .carousel-heading{
+        font-size: 80px;
+    }
+    .carousel-caption{
+        margin-bottom: 150px;
+    }
+    .carousel-link{
+        width: 380px;
+    }
+    .mobile-carousel{
+        display: none;
+    }
+    .mobile-promotion{
+        display: none;
+    }
+    .desktop-promotion{
+        display: block;
+    }
+    .tablet-promotion{
+        display: none;
+    }
+    .horizontal-line{
+        display: none;
+    }
+}
