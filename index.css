@@ -4,6 +4,66 @@ body{
 .black-bg{
     background-color: #000000;
 }
+.header img{
+    height: 30px;
+    width: 100px;
+}
+.header i{
+    font-size: 20px;
+    line-height: 28px;
+}
+.header a{
+    display: block;
+    color: #000;
+}
+.header a:hover{
+    color: #000;
+}
+#hidden_element{
+    display: none;
+}
+#hidden_bar{
+    float: left;
+    display: none;
+}
+#search_icon{
+    display: none;
+    float: left;
+    padding-right: 24px;
+}
+.search-bar{
+    width: 270px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    position: relative;
+}
+.search-bar-value{
+    outline: none;
+    border: none;
+}
+.search-bar-icon{
+    position: absolute;
+    right: 4%;
+    bottom: 0
+}
+.mobile-search-bar-value{
+    height: 43px;
+    width: 85%;
+    outline: none;
+    border: none;
+}
+.mobile-search-bar-icon{
+    height: 43px;
+    width: 15%;
+    font-size: 28px;
+}
+.mobile-search-bar-icon a{
+    display: block;
+    color: #000000;
+}
+.mobile-search-bar-icon a:hover{
+    color: #000000;
+}
 .club-card .card-element{
     position: relative;
 }
@@ -29,13 +89,18 @@ body{
 .explore-card{
     position: relative !important;
 }
-.explore-card img{
-    width: 100%;
-}
-.explore-card i{
+.explore-card a{
+    display: block;
     position: absolute;
     bottom: 4%;
     right: 8%;
+    color: #000000;
+}
+.explore-card a:hover{
+    color: #000000;
+}
+.explore-card img{
+    width: 100%;
 }
 .carousel-inner img {
     width: 100%;
@@ -63,6 +128,12 @@ body{
 .mobile-web-icon{
     display: none;
 }
+.mobile-web-icon a{
+    display: block;
+}
+.web-icon a{
+    display: block;
+}
 .mobile-promotion{
     display: block;
 }
@@ -88,6 +159,14 @@ body{
     background-image: url(images/Web-Desktop1080x180.png);
     background-size: 100% 100%;
     height: 150px;
+}
+.footer a{
+    display: block;
+    text-decoration: none !important;
+    color: #ffffff;
+}
+.footer a:hover{
+    color: #ffffff;
 }
 .platform a{
     display: block;
@@ -132,6 +211,12 @@ hr{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    #search_icon{
+        display: block;
+    }
+    .mobile-search-bar{
+        display: none;
+    }
     .club-card .details{
         bottom: 0;
         top: 4%;
@@ -165,6 +250,12 @@ hr{
     }
 }
 @media screen and (min-width: 993px) and (max-width: 1199px) {
+    #search_icon{
+        display: block;
+    }
+    .mobile-search-bar{
+        display: none;
+    }
     .mobile-explore-card{
         display: none;
     }
@@ -197,6 +288,12 @@ hr{
     }
 }
 @media screen and (min-width: 1200px) {
+    #search_icon{
+        display: block;
+    }
+    .mobile-search-bar{
+        display: none;
+    }
     .club-card .details{
         bottom: 15%;
     }
@@ -207,13 +304,13 @@ hr{
         min-height: 90px;
     }
     .carousel-heading{
-        font-size: 80px;
+        font-size: 60px;
     }
     .carousel-caption{
-        margin-bottom: 150px;
+        margin-bottom: 80px;
     }
     .carousel-link{
-        width: 380px;
+        width: 330px;
     }
     .mobile-carousel{
         display: none;
@@ -229,5 +326,16 @@ hr{
     }
     .horizontal-line{
         display: none;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .carousel-heading{
+        font-size: 80px;
+    }
+    .carousel-caption{
+        margin-bottom: 150px;
+    }
+    .carousel-link{
+        width: 380px;
     }
 }
