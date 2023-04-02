@@ -1,817 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>USUHomePage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>USUHomePage</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- ########### Header ########### -->
-  <div class=" header bg-warning">
-    <div class="container clearfix py-4">
-      <img class="float-left" src="images/usu_logo.png" alt="Logo">
-      <div class="headear-logo float-right clearfix">
-        <div id="search_icon">
-          <a href="#">
-            <i onclick="firstFunction()" class="fa-solid fa-magnifying-glass"></i>
+  <body>
+    <!-- ########### Header ########### -->
+    <div class="header bg-warning">
+      <div class="container clearfix py-3">
+        <img class="float-left" src="images/usu_logo.png" alt="Logo" />
+        <div class="headear-logo float-right clearfix">
+          <div id="search_icon">
+            <a href="#">
+              <i
+                onclick="firstFunction()"
+                class="fa-solid fa-magnifying-glass"
+              ></i>
+            </a>
+          </div>
+          <div id="hidden_bar">
+            <div class="search-bar bg-warning">
+              <input type="text" class="search-bar-value bg-warning" />
+              <div class="search-bar-icon">
+                <a href="#">
+                  <i
+                    onclick="secondFunction()"
+                    class="fa-solid fa-magnifying-glass"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a class="float-right" href="#">
+            <i onclick="myFunction(this)" class="fa-solid fa-bars"></i>
           </a>
         </div>
-        <div id="hidden_bar">
-          <div class=" search-bar bg-warning">
-            <input type="text" class="search-bar-value bg-warning">
-            <div class="search-bar-icon">
-              <a href="#">
-                <i onclick="secondFunction()" class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div id="hidden_element">
+        <div class="black-bg pb-5 pt-4">
+          <div class="container text-light">
+            <div class="row px-5">
+              <div class="col-12 mobile-search-bar clearfix">
+                <input
+                  type="text"
+                  class="float-left mobile-search-bar-value pl-3"
+                  placeholder="Search"
+                />
+                <div class="float-left bg-warning mobile-search-bar-icon">
+                  <a class="pl-2" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-xl-3 mt-4">
+                <h5 class="mb-4">About Us</h5>
+                <div class="mb-3">Our Student Board</div>
+                <div class="mb-3">Sustainablity</div>
+                <div class="mb-3">Jobs & Opportunities</div>
+                <div class="mb-3">Alumni & Friends</div>
+                <div class="mb-3">Contact Us</div>
+              </div>
+              <div class="col-6 col-md-4 col-xl-3 mt-4">
+                <h5 class="mb-4">Membership</h5>
+                <div class="mb-3">Join/ Renew</div>
+                <div class="mb-3">Rewards Offers</div>
+                <div class="mb-3">Membership Help</div>
+                <div class="mb-3">USU App</div>
+              </div>
+              <div class="col-6 col-md-4 col-xl-3 mt-4">
+                <h5 class="mb-4">What's On</h5>
+                <div class="mb-3">Event Calender</div>
+                <div class="mb-3">Key Events</div>
+                <div class="mb-3">Mannaing Bar</div>
+                <div class="mb-3">Hermann's Bar</div>
+              </div>
+              <div class="col-6 col-md-4 col-xl-3 mt-4">
+                <h5 class="mb-4">Clubs & Societies</h5>
+                <div class="mb-3">Clubs & Societies A-Z</div>
+                <div class="mb-3">Start a club</div>
+                <div class="mb-3">Event Submission</div>
+                <div class="mb-3">Venue & Equipment Hire</div>
+                <div class="mb-3">Clubs Portal</div>
+              </div>
+              <div class="col-6 col-md-4 col-xl-3 mt-4">
+                <h5 class="mb-4">Get Involved</h5>
+                <div class="mb-3">Student Board Elections</div>
+                <div class="mb-3">Volunteers</div>
+                <div class="mb-3">INCUBATE</div>
+                <div class="mb-3">MAD- Make a Difference</div>
+                <div class="mb-3">Revues</div>
+                <div class="mb-3">Debates</div>
+                <div class="mb-3">Palladian Cup</div>
+                <div class="mb-3">USU Creative Awards</div>
+                <div class="mb-3">USU Markets</div>
+                <div class="mb-3">Hermes</div>
+                <div class="mb-3">Language Exchange</div>
+                <div class="mb-3">Student Publications</div>
+              </div>
+              <div class="col-6 col-md-4 col-xl-3 mt-4">
+                <h5 class="mb-4">Uni Life</h5>
+                <div class="mb-3">International Students</div>
+                <div class="mb-3">Student Employment</div>
+                <div class="mb-3">Student Spaces</div>
+                <div class="mb-3">Verge Gallery</div>
+                <div class="mb-3">WeChat</div>
+              </div>
+              <div class="col-6 col-md-4 col-xl-3 mt-4">
+                <h5 class="mb-4">Shop</h5>
+                <div class="mb-3">USYD Store</div>
+                <div class="mb-3">Graduation Hire</div>
+              </div>
+              <div class="platform col-12 col-md-6 col-xl-3 mt-4">
+                <h5 class="mb-4">Food & Drink</h5>
+                <hr />
+                <div class="clearfix">
+                  <a class="float-left pr-3" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a class="float-left pr-3" href="#">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                  <a class="float-left pr-3" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a class="float-left pr-3" href="#">
+                    <i class="fa-brands fa-weixin"></i>
+                  </a>
+                  <a class="float-left" href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########### Header End ########### -->
+
+    <!-- ########## First CAROUSEL ########## -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="mobile-carousel" src="images/apppic.jpg" alt="website homepage">
+          <img class="large-carousel" src="images/Websitehomepageheader.jpg" alt="website homepage" />
+          <div class="carousel-caption text-light">
+            <h1 class="carousel-heading">USU COVID-19 UPDATE</h1>
+            <a class="bg-warning text-dark py-2 px-3" href="#">
+              <h5 class="my-0">READ LATEST UPDATE</h5>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="mobile-carousel" src="images/MembershipSlide2Slider1Mobile.jpg" alt="Membership slide">
+          <img class="large-carousel" src="images/MembershipSlide2Slider1Desktop.jpg" alt="Membership slide" />
+          <div class="carousel-caption text-light">
+            <h1 class="carousel-heading">MEMBERSHIP</h1>
+            <a class="bg-warning text-dark py-2 px-3" href="#">
+              <h5 class="my-0">JOIN NOW</h5>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="mobile-carousel" src="images/webcarousel-mob-750x750.jpg" alt="Nominate slide">
+          <img class="large-carousel" src="images/webcarousel-1920x630.jpg" alt="Nominate slide" />
+          <div class="carousel-caption text-light">
+            <h1 class="carousel-heading">BOARD NOMINATIONS OPEN</h1>
+            <a class="bg-warning text-dark py-2 px-3" href="#">
+              <h5 class="my-0">NOMINATE NOW</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########## First CAROUSEL END ########## -->
+
+    <!-- ########## First Promotion ########## -->
+    <div class="bg-light my-5 py-5">
+      <div class="mobile-promotion">
+        <img src="images/Web-Mob-750x280.png">
+      </div>
+      <div class="container desktop-promotion">
+        <img src="images/Web-Desktop1080x180.png">
+      </div>
+    </div>
+    <!-- ########### First Promotion End ########### -->
+
+    <!-- ########### First Club card deck ########### -->
+    <div class="container club-card">
+      <div class="row">
+        <div class="col-12 col-md-6 card-element my-3">
+          <img src="images/MembershipBox1.jpg" alt="membership box" />
+          <div class="details text-center text-light">
+            <h1 class="mb-5">MEMBERSHIP</h1>
+            <a class="black-bg py-3 px-3" href="#">
+              <h5 class="my-0">JOIN/ RENEW</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 card-element my-3">
+          <img
+            src="images/ClubsAndSocietiesBox2.jpg"
+            alt="club and societies"
+          />
+          <div class="details text-center text-light">
+            <h1 class="mb-5">CLUB & SOCIETIES</h1>
+            <a class="black-bg py-3 px-3" href="#">
+              <h5 class="my-0">
+                FIND OUT MORE
+              </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########### First Club card deck End ########### -->
+
+    <!-- ########## Frist EXPLORE CARD ########## -->
+    <div class="container explore-card my-4">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
+          <img class="mobile-explore" src="images/WhatsOnCard1Mobile.jpg" alt="card image" />
+          <img class="large-explore" src="images/WhatsOnCard1Desktop.jpg" alt="Card image" />
+          <div class="bg-light shadow pl-3 pr-2">
+            <h6 class="title py-3 my-0">WHATS'S ON</h6>
+            <div class="details pb-3">
+              Stay up to date with current and upcoming USU events
+            </div>
+            <a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
+          <img class="mobile-explore" src="images/GetInvolvedCard2Mobile.jpg" alt="card image" />
+          <img class="large-explore" src="images/GetInvolvedCard2Desktop.jpg" alt="Card image" />
+          <div class="bg-light shadow pl-3 pr-2">
+            <h6 class="title py-3 my-0">GET INVOLVED</h6>
+            <div class="details pb-3">Check out all the opportunities</div>
+            <a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
+          <img class="mobile-explore" src="images/UniLifeCard3Mobile.jpg" alt="card image" />
+          <img class="large-explore" src="images/UniLifeCard3Desktop.jpg" alt="Card image" />
+          <div class="bg-light shadow pl-3 pr-2">
+            <h6 class="title py-3 my-0">UNI LIFE</h6>
+            <div class="details pb-3">
+              Be part of the best campus experience in Australia
+            </div>
+            <a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
+          <img class="mobile-explore" src="images/FoodandDrinkCard4Mobile.jpg" alt="card image" />
+          <img class="large-explore" src="images/FoodandDrinkCard4Desktop-(2).jpg" alt="Card image" />
+          <div class="bg-light shadow pl-3 pr-2">
+            <h6 class="title py-3 my-0">FOOD & DRINK</h6>
+            <div class="details pb-3">
+              Discover the best places to eat and drink on campus
+            </div>
+            <a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########## Frist EXPLORE CARD END ########## -->
+
+    <!-- ########## Embed Video ########## -->
+    <div class="container embed-video my-5">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/RhP849q5Dyg"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- ########## Embed Video END ########## -->
+
+    <!-- ########### Second Club card deck ########### -->
+    <div class="container club-card text-uppercase">
+      <div class="row">
+        <div class="col-12 col-md-6 card-element my-3">
+          <img src="images/OurStudentBoardDemoBox3.jpg" alt="student board" />
+          <div class="details text-center text-light">
+            <h1 class="mb-5">OUR STUDENT BOARD</h1>
+            <a class="black-bg py-3 px-3" href="#">
+              <h5 class="my-0">
+                FIND OUT MORE
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 card-element my-3">
+          <img src="images/VolunteerDemoBox4.jpg" alt="Volunteer" />
+          <div class="details text-center text-light">
+            <h1 class="mb-5">VOLUNTEER</h1>
+            <a class="black-bg py-3 px-3" href="#">
+              <h5 class="my-0">APPLY NOW</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########### Second Club card deck End ########### -->
+
+    <!-- ########## Second EXPLORE CARD ########## -->
+    <div class="container explore-card my-4">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
+          <img class="mobile-explore" src="images/InternationalStudentsCard5Mobile.jpg" alt="international Student" />
+          <img class="large-explore" src="images/InternationalStudentsCard5Desktop-(1).jpg" alt="international Student" />
+          <div class="bg-light shadow pl-3 pr-2">
+            <h6 class="title py-3 my-0">INTERNATIONAL STUDENTS</h6>
+            <div class="details pb-3">
+              Where to hang, make freinds and get the most from your uni
+              experience
+            </div>
+            <a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
+          <img class="mobile-explore" src="images/KeyEventsCard6Mobile.jpg" alt="key event" />
+          <img class="large-explore" src="images/KeyEventsCard6Desktop.jpg" alt="key event" />
+          <div class="bg-light shadow pl-3 pr-2">
+            <h6 class="title py-3 my-0">KEY EVENTS</h6>
+            <div class="details pb-3">
+              Check out all the events and programs that we provide
+            </div>
+            <a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
+          <img class="mobile-explore" src="images/RewardsCard7Mobile.jpg" alt="reward card" />
+          <img class="large-explore" src="images/RewardsCard7Desktop.jpg" alt="reward card" />
+          <div class="bg-light shadow pl-3 pr-2">
+            <h6 class="title py-3 my-0">REWARDS OFFERS</h6>
+            <div class="details pb-3">
+              Discover great offers for Rewards Members on and off campus
+            </div>
+            <a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
+          <img class="mobile-explore" src="images/SustainabilityCard8Mobile.jpg" alt="sustainable" />
+          <img class="large-explore" src="images/SustainabilityCard8Desktop.jpg" alt="sustainable" />
+          <div class="bg-light shadow pl-3 pr-2">
+            <h6 class="title py-3 my-0">SUSTAINABILITY</h6>
+            <div class="details pb-3">
+              Discover all the ways we are building a more sustainable campus
+            </div>
+            <a href="#">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########## Second EXPLORE CARD END ########## -->
+
+    <!-- ########## Second CAROUSEL ########## -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="mobile-carousel" src="images/USYDStoreSlide1Slider2Mobile.jpg" alt="usyd store">
+          <img class="large-carousel" src="images/USYDStoreSlide1Slider2Desktop.jpg" alt="usyd store" />
+          <div class="carousel-caption text-light">
+            <h1 class="carousel-heading">USYD STORE</h1>
+            <a class="bg-warning text-dark py-2 px-3" href="#">
+              <h5
+                class="my-0"
+              >
+                SHOP NOW
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="mobile-carousel" src="images/GradHireSlide2Slider2Mobile.jpg" alt="graduation hire">
+          <img class="large-carousel" src="images/GradHireSlide2Slider2Desktop.jpg" alt="graduation hire" />
+          <div class="carousel-caption text-light">
+            <h1 class="carousel-heading">graduation Hire</h1>
+            <a class="bg-warning text-dark py-2 px-3" href="#">
+              <h5
+                class="my-0"
+              >
+                hire NOW
+              </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########## Second CAROUSEL END ########## -->
+
+    <!-- ########### Web Icon ########### -->
+    <div class="container icon my-5">
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <img class="mobile-web-icon" src="images/USU-WEB-ICONS_167-5x131-59_1.jpg">
+            <img class="web-icon" src="images/USU-WEB-ICONS_247-5x194-45_1.jpg" />
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <img class="mobile-web-icon" src="images/USU-WEB-ICONS_167-5x131-59_2.jpg">
+            <img class="web-icon" src="images/USU-WEB-ICONS_247-5x194-45_2-(1).jpg" />
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <img class="mobile-web-icon" src="images/USU-WEB-ICONS_167-5x131-59_3-(1).jpg">
+            <img class="web-icon" src="images/USU-WEB-ICONS_247-5x194-45_3.jpg" />
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <img class="mobile-web-icon" src="images/USU-WEB-ICONS_167-5x131-59_4-(1).jpg">
+            <img class="web-icon" src="images/USU-WEB-ICONS_247-5x194-45_4.jpg" />
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <img class="mobile-web-icon" src="images/USU-WEB-ICONS_167-5x131-59_5.jpg">
+            <img class="web-icon" src="images/USU-WEB-ICONS_247-5x194-45_5.jpg" />
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <img class="mobile-web-icon" src="images/USU-WEB-ICONS_167-5x131-59_6.jpg">
+            <img class="web-icon" src="images/USU-WEB-ICONS_247-5x194-45_6.jpg" />
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <img class="mobile-web-icon" src="images/USU-WEB-ICONS_167-5x131-59_7.jpg">
+            <img class="web-icon" src="images/USU-WEB-ICONS_247-5x194-45_7.jpg" />
+          </a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="#">
+            <img class="mobile-web-icon" src="images/USU-WEB-ICONS_167-5x131-59_8.jpg">
+            <img class="web-icon" src="images/USU-WEB-ICONS_247-5x194-45_8.jpg" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ########## WEB ICON END ########## -->
+
+    <!-- ########## Second Promotion ########## -->
+    <div class="bg-light my-5 py-5">
+      <div class="mobile-promotion">
+        <img src="images/Web-Mob-750x280.png">
+      </div>
+      <div class="container desktop-promotion">
+        <img src="images/Web-Desktop1080x180.png">
+      </div>
+    </div>
+    <!-- ########### Second Promotion End ########### -->
+
+    <!-- ########### Footer ########### -->
+    <div class="footer black-bg py-5">
+      <div class="container text-light">
+        <div class="row text-uppercase font-weight-bold">
+          <div class="col-12 col-sm-4 col-md-4 col-xl-3">
+            <a class="mb-3" href="#">
+              <div>About</div>
+            </a>
+            <a class="mb-3" href="#">
+              <div>contact</div>
+            </a>
+            <a class="mb-3" href="#">
+              <div>join</div>
+            </a>
+            <a class="mb-3" href="#">
+              <div>membership help</div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-4 col-md-4 col-xl-3">
+            <a class="mb-3" href="#">
+              <div>Food & Drink</div>
+            </a>
+            <a class="mb-3" href="#">
+              <div>USYD store</div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-4 col-md-4 col-xl-3">
+            <a class="mb-3" href="#">
+              <div>Jobs & opportunities</div>
+            </a>
+            <a class="mb-3" href="#">
+              <div>Sponsorship & advertising</div>
+            </a>
+          </div>
+          <div class="platform col-12 col-sm-7 col-md-6 col-xl-3">
+            <div class="horizontal-line">
+              <hr />
+            </div>
+            <a class="mb-3" href="#">
+              <div>Download our app</div>
+            </a>
+            <div class="clearfix">
+              <a class="float-left pr-4" href="#">
+                <img src="images/app_store.png" alt="app store" />
+              </a>
+              <a class="float-left" href="#">
+                <img src="images/play_store.png" alt="play store" />
               </a>
             </div>
-
-          </div>
-        </div>
-        <a class="float-right" href="#">
-          <i onclick="myFunction(this)" class="fa-solid fa-bars"></i>
-        </a>
-      </div>
-    </div>
-
-    <div id="hidden_element">
-      <div class="black-bg pb-5 pt-4">
-        <div class="container text-light">
-          <div class="row px-5">
-            <div class="col-12 mobile-search-bar clearfix">
-              <input type="text" class="float-left mobile-search-bar-value pl-3" placeholder="Search">
-              <div class="float-left bg-warning mobile-search-bar-icon">
-                <a class="pl-2" href="#">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-xl-3 mt-4">
-              <h5 class="mb-4">About Us</h5>
-              <div class="mb-3">Our Student Board</div>
-              <div class="mb-3">Sustainablity</div>
-              <div class="mb-3">Jobs & Opportunities</div>
-              <div class="mb-3">Alumni & Friends</div>
-              <div class="mb-3">Contact Us</div>
-            </div>
-            <div class="col-6 col-md-4 col-xl-3 mt-4">
-              <h5 class="mb-4">Membership</h5>
-              <div class="mb-3">Join/ Renew</div>
-              <div class="mb-3">Rewards Offers</div>
-              <div class="mb-3">Membership Help</div>
-              <div class="mb-3">USU App</div>
-            </div>
-            <div class="col-6 col-md-4 col-xl-3 mt-4">
-              <h5 class="mb-4">What's On</h5>
-              <div class="mb-3">Event Calender</div>
-              <div class="mb-3">Key Events</div>
-              <div class="mb-3">Mannaing Bar</div>
-              <div class="mb-3">Hermann's Bar</div>
-            </div>
-            <div class="col-6 col-md-4 col-xl-3 mt-4">
-              <h5 class="mb-4">Clubs & Societies</h5>
-              <div class="mb-3">Clubs & Societies A-Z</div>
-              <div class="mb-3">Start a club</div>
-              <div class="mb-3">Event Submission</div>
-              <div class="mb-3">Venue & Equipment Hire</div>
-              <div class="mb-3">Clubs Portal</div>
-            </div>
-            <div class="col-6 col-md-4 col-xl-3 mt-4">
-              <h5 class="mb-4">Get Involved</h5>
-              <div class="mb-3">Student Board Elections</div>
-              <div class="mb-3">Volunteers</div>
-              <div class="mb-3">INCUBATE</div>
-              <div class="mb-3">MAD- Make a Difference</div>
-              <div class="mb-3">Revues</div>
-              <div class="mb-3">Debates</div>
-              <div class="mb-3">Palladian Cup</div>
-              <div class="mb-3">USU Creative Awards</div>
-              <div class="mb-3">USU Markets</div>
-              <div class="mb-3">Hermes</div>
-              <div class="mb-3">Language Exchange</div>
-              <div class="mb-3">Student Publications</div>
-            </div>
-            <div class="col-6 col-md-4 col-xl-3 mt-4">
-              <h5 class="mb-4">Uni Life</h5>
-              <div class="mb-3">International Students</div>
-              <div class="mb-3">Student Employment</div>
-              <div class="mb-3">Student Spaces</div>
-              <div class="mb-3">Verge Gallery</div>
-              <div class="mb-3">WeChat</div>
-            </div>
-            <div class="col-6 col-md-4 col-xl-3 mt-4">
-              <h5 class="mb-4">Shop</h5>
-              <div class="mb-3">USYD Store</div>
-              <div class="mb-3">Graduation Hire</div>
-            </div>
-            <div class="platform col-12 col-md-6 col-xl-3 mt-4">
-              <h5 class="mb-4">Food & Drink</h5>
-              <hr />
-              <div class="clearfix">
-                <a class="float-left pr-3" href="#">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a class="float-left pr-3" href="#">
-                  <i class="fa-brands fa-square-facebook"></i>
-                </a>
-                <a class="float-left pr-3" href="#">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a class="float-left pr-3" href="#">
-                  <i class="fa-brands fa-weixin"></i>
-                </a>
-                <a class="float-left" href="#">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########### Header End ########### -->
-
-  <!-- ########## First MOBILE CAROUSEL ########## -->
-  <div id="demo" class="carousel slide mobile-carousel" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/apppic.jpg" alt="website homepage" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">USU COVID-19 UPDATE</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">
-              READ LATEST UPDATE
-            </h4>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/MembershipSlide2Slider1Mobile.jpg" alt="Membership slide" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">MEMBERSHIP</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">
-              JOIN NOW
-            </h4>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/webcarousel-mob-750x750.jpg" alt="Nominate slide" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">BOARD NOMINATIONS OPEN</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">
-              NOMINATE NOW
-            </h4>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########## First MOBILE CAROUSEL END ########## -->
-
-  <!-- ########## First LARGE CAROUSEL ########## -->
-  <div id="demo" class="carousel slide large-carousel" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/Websitehomepageheader.jpg" alt="website homepage" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">USU COVID-19 UPDATE</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-2 carousel-link">
-              READ LATEST UPDATE
-            </h4>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/MembershipSlide2Slider1Desktop.jpg" alt="Membership slide" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">MEMBERSHIP</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-2 carousel-link">
-              JOIN NOW
-            </h4>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/webcarousel-1920x630.jpg" alt="Nominate slide" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">BOARD NOMINATIONS OPEN</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-2 carousel-link">
-              NOMINATE NOW
-            </h4>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########## First LARGE CAROUSEL END ########## -->
-
-  <!-- ########## First Promotion ########## -->
-  <div class="mobile-promotion py-5 my-5 bg-light">
-    <div class="mobile-promotion-bg"></div>
-  </div>
-  <div class="container-fluid bg-light my-5">
-    <div class="desktop-promotion py-5 bg-light">
-      <div class="desktop-promotion-bg"></div>
-    </div>
-  </div>
-  <div class="container-fluid bg-light">
-    <div class="tablet-promotion py-5 my-5 px-3 bg-light">
-      <div class="tablet-promotion-bg"></div>
-    </div>
-  </div>
-  <!-- ########### First Promotion End ########### -->
-
-  <!-- ########### First Club card deck ########### -->
-  <div class="container club-card">
-    <div class="row">
-      <div class="col-12 col-md-6 card-element my-3">
-        <img src="images/MembershipBox1.jpg" alt="membership box" />
-        <div class="details text-center text-light">
-          <h1>MEMBERSHIP</h1>
-          <a href="#">
-            <h5 class="black-bg py-3 mx-auto my-5 card-link">JOIN/ RENEW</h5>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 card-element my-3">
-        <img src="images/ClubsAndSocietiesBox2.jpg" alt="club and societies" />
-        <div class="details text-center text-light">
-          <h1>CLUB & SOCIETIES</h1>
-          <a href="#">
-            <h5 class="black-bg py-3 mx-auto my-5 card-link">
-              FIND OUT MORE
-            </h5>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########### First Club card deck End ########### -->
-
-  <!-- ########## Frist MOBILE EXPLORE CARD ########## -->
-  <div class="container mobile-explore-card my-4">
-    <div class="row">
-      <div class="col-12 mb-3 explore-card">
-        <img src="images/WhatsOnCard1Mobile.jpg" alt="card image" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="py-3">WHATS'S ON</h6>
-          <div class="pb-3">
-            Stay up to date with current and upcoming USU events
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 mb-3 explore-card">
-        <img src="images/GetInvolvedCard2Mobile.jpg" alt="card image" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="py-3">GET INVOLVED</h6>
-          <div class="pb-3">Check out all the opportunities</div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 mb-3 explore-card">
-        <img src="images/UniLifeCard3Mobile.jpg" alt="card image" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="py-3">UNI LIFE</h6>
-          <div class="pb-3">
-            Be part of the best campus experience in Australia
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 mb-3 explore-card">
-        <img src="images/FoodandDrinkCard4Mobile.jpg" alt="card image" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="py-3">FOOD & DRINK</h6>
-          <div class="pb-3">
-            Discover the best places to eat and drink on campus
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########## Frist MOBILE EXPLORE CARD END ########## -->
-
-  <!-- ########## Frist LARGE EXPLORE CARD ########## -->
-  <div class="container large-explore-card my-4">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
-        <img src="images/WhatsOnCard1Desktop.jpg" alt="Card image" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="title py-3">WHATS'S ON</h6>
-          <div class="details pb-3">
-            Stay up to date with current and upcoming USU events
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
-        <img src="images/GetInvolvedCard2Desktop.jpg" alt="Card image" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="title py-3">GET INVOLVED</h6>
-          <div class="details pb-3">Check out all the opportunities</div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
-        <img src="images/UniLifeCard3Desktop.jpg" alt="Card image" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="title py-3">UNI LIFE</h6>
-          <div class="details pb-3">
-            Be part of the best campus experience in Australia
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
-        <img src="images/FoodandDrinkCard4Desktop-(2).jpg" alt="Card image" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="title py-3">FOOD & DRINK</h6>
-          <div class="details pb-3">
-            Discover the best places to eat and drink on campus
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########## Frist LARGE EXPLORE CARD END ########## -->
-
-  <!-- ########## Embed Video ########## -->
-  <div class="container embed-video my-5">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RhP849q5Dyg" allowfullscreen></iframe>
-    </div>
-  </div>
-  <!-- ########## Embed Video END ########## -->
-
-  <!-- ########### Second Club card deck ########### -->
-  <div class="container club-card">
-    <div class="row">
-      <div class="col-12 col-md-6 card-element my-3">
-        <img src="images/OurStudentBoardDemoBox3.jpg" alt="student board" />
-        <div class="details text-center text-light">
-          <h1>OUR STUDENT BOARD</h1>
-          <a href="#">
-            <h5 class="black-bg py-3 mx-auto my-5 card-link">
-              FIND OUT MORE
-            </h5>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 card-element my-3">
-        <img src="images/VolunteerDemoBox4.jpg" alt="Volunteer" />
-        <div class="details text-center text-light">
-          <h1>VOLUNTEER</h1>
-          <a href="#">
-            <h5 class="black-bg py-3 mx-auto my-5 card-link">APPLY NOW</h5>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########### Second Club card deck End ########### -->
-
-  <!-- ########## Second MOBILE EXPLORE CARD ########## -->
-  <div class="container mobile-explore-card my-4">
-    <div class="row">
-      <div class="col-12 mb-3 explore-card">
-        <img src="images/InternationalStudentsCard5Mobile.jpg" alt="international Studend" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="py-3">INTERNATIONAL STUDENTS</h6>
-          <div class="pb-3">
-            Where to hang, make freinds and get the most from your uni
-            experience
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 mb-3 explore-card">
-        <img src="images/KeyEventsCard6Mobile.jpg" alt="international Studend" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="py-3">KEY EVENTS</h6>
-          <div class="pb-3">
-            Check out all the events and programs that we provide
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 mb-3 explore-card">
-        <img src="images/RewardsCard7Mobile.jpg" alt="international Studend" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="py-3">REWARDS OFFERS</h6>
-          <div class="pb-3">
-            Discover great offers for Rewards Members on and off campus
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-12 mb-3 explore-card">
-        <img src="images/SustainabilityCard8Mobile.jpg" alt="international Studend" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="py-3">SUSTAINABILITY</h6>
-          <div class="pb-3">
-            Discover all the ways we are building a more sustainable campus
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########## Second MOBILE EXPLORE CARD END ########## -->
-
-  <!-- ########## Second LARGE EXPLORE CARD ########## -->
-  <div class="container large-explore-card my-4">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
-        <img src="images/InternationalStudentsCard5Desktop-(1).jpg" alt="international Studend" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="title py-3">INTERNATIONAL STUDENTS</h6>
-          <div class="details pb-3">
-            Where to hang, make freinds and get the most from your uni
-            experience
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
-        <img src="images/KeyEventsCard6Desktop.jpg" alt="international Studend" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="title py-3">KEY EVENTS</h6>
-          <div class="details pb-3">
-            Check out all the events and programs that we provide
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
-        <img src="images/RewardsCard7Desktop.jpg" alt="international Studend" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="title py-3">REWARDS OFFERS</h6>
-          <div class="details pb-3">
-            Discover great offers for Rewards Members on and off campus
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3 explore-card">
-        <img src="images/SustainabilityCard8Desktop.jpg" alt="international Studend" />
-        <div class="bg-light shadow pl-4">
-          <h6 class="title py-3">SUSTAINABILITY</h6>
-          <div class="details pb-3">
-            Discover all the ways we are building a more sustainable campus
-          </div>
-          <a href="#">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########## Second LARGE EXPLORE CARD END ########## -->
-
-  <!-- ########## Second MOBILE CAROUSEL ########## -->
-  <div id="demo" class="carousel slide mobile-carousel" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/USYDStoreSlide1Slider2Mobile.jpg" alt="usyd store" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">USYD STORE</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">
-              SHOP NOW
-            </h4>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/GradHireSlide2Slider2Mobile.jpg" alt="Membership slide" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">graduation Hire</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-5 carousel-link">
-              hire NOW
-            </h4>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########## Second MOBILE CAROUSEL END ########## -->
-
-  <!-- ########## Second LARGE CAROUSEL ########## -->
-  <div id="demo" class="carousel slide large-carousel" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/USYDStoreSlide1Slider2Desktop.jpg" alt="usyd store" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">USYD STORE</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-2 carousel-link">
-              SHOP NOW
-            </h4>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/GradHireSlide2Slider2Desktop.jpg" alt="Membership slide" />
-        <div class="carousel-caption text-center text-light">
-          <h1 class="carousel-heading">graduation Hire</h1>
-          <a href="#">
-            <h4 class="bg-warning text-dark py-2 mx-auto mt-4 mb-2 carousel-link">
-              hire NOW
-            </h4>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ########## Second LARGE CAROUSEL END ########## -->
-
-  <!-- ########## Mobile WEB ICON ########## -->
-  <div class="container mobile-web-icon my-5">
-    <div class="row">
-      <div class="col-6">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_167-5x131-59_1.jpg" />
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_167-5x131-59_2.jpg" />
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_167-5x131-59_3-(1).jpg" />
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_167-5x131-59_4-(1).jpg" />
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_167-5x131-59_5.jpg" />
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_167-5x131-59_6.jpg" />
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_167-5x131-59_7.jpg" />
-        </a>
-      </div>
-      <div class="col-6">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_167-5x131-59_8.jpg" />
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- ########## Mobile Web icons end ########## -->
-
-  <!-- ########### Large Web Icon ########### -->
-  <div class="container web-icon my-5">
-    <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_247-5x194-45_1.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_247-5x194-45_2-(1).jpg" />
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_247-5x194-45_3.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_247-5x194-45_4.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_247-5x194-45_5.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_247-5x194-45_6.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_247-5x194-45_7.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <a href="#">
-          <img src="images/USU-WEB-ICONS_247-5x194-45_8.jpg" />
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- ########## Large WEB ICON END ########## -->
-
-  <!-- ########## Second Promotion ########## -->
-  <div class="mobile-promotion py-5 my-5 bg-light">
-    <div class="mobile-promotion-bg"></div>
-  </div>
-  <div class="container-fluid bg-light my-5">
-    <div class="desktop-promotion py-5 bg-light">
-      <div class="desktop-promotion-bg"></div>
-    </div>
-  </div>
-  <div class="container-fluid bg-light">
-    <div class="tablet-promotion py-5 my-5 px-3 bg-light">
-      <div class="tablet-promotion-bg"></div>
-    </div>
-  </div>
-  <!-- ########### Second Promotion End ########### -->
-
-  <!-- ########### Footer ########### -->
-  <div class="footer black-bg py-5">
-    <div class="container text-light">
-      <div class="row text-uppercase font-weight-bold">
-        <div class="col-12 col-sm-4 col-md-4 col-xl-3">
-          <a class="mb-3" href="#">
-            <div>About</div>
-          </a>
-          <a class="mb-3" href="#">
-            <div>contact</div>
-          </a>
-          <a class="mb-3" href="#">
-            <div>join</div>
-          </a>
-          <a class="mb-3" href="#">
-            <div>membership help</div>
-          </a>
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-xl-3">
-          <a class="mb-3" href="#">
-            <div>Food & Drink</div>
-          </a>
-          <a class="mb-3" href="#">
-            <div>USYD store</div>
-          </a>
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-xl-3">
-          <a class="mb-3" href="#">
-            <div>Jobs & opportunities</div>
-          </a>
-          <a class="mb-3" href="#">
-            <div>Sponsorship & advertising</div>
-          </a>
-        </div>
-        <div class="platform col-12 col-sm-7 col-md-6 col-xl-3">
-          <div class="horizontal-line">
             <hr />
-          </div>
-          <a class="mb-3" href="#">
-            <div>Download our app</div>
-          </a>
-          <div class="clearfix">
-            <a class="float-left pr-4" href="#">
-              <img src="images/app_store.png" alt="app store" />
-            </a>
-            <a class="float-left" href="#">
-              <img src="images/play_store.png" alt="play store" />
-            </a>
-          </div>
-          <hr />
-          <div class="clearfix">
-            <a class="float-left pr-4" href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a class="float-left pr-4" href="#">
-              <i class="fa-brands fa-square-facebook"></i>
-            </a>
-            <a class="float-left pr-4" href="#">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a class="float-left pr-4" href="#">
-              <i class="fa-brands fa-weixin"></i>
-            </a>
-            <a class="float-left" href="#">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
+            <div class="clearfix">
+              <a class="float-left pr-4" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="float-left pr-4" href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a class="float-left pr-4" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="float-left pr-4" href="#">
+                <i class="fa-brands fa-weixin"></i>
+              </a>
+              <a class="float-left" href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mt-4 bottom clearfix">
-        <div class="float-left pr-3">&#169;2020 USU</div>
-        <div class="float-left pr-3">Sitemap</div>
-        <div class="float-left pr-3">Privacy policy</div>
-        <div class="float-left pr-3">Terms of Use</div>
+        <div class="mt-4 bottom clearfix">
+          <div class="float-left pr-3">&#169;2020 USU</div>
+          <div class="float-left pr-3">Sitemap</div>
+          <div class="float-left pr-3">Privacy policy</div>
+          <div class="float-left pr-3">Terms of Use</div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- ########### Footer End ########### -->
+    <!-- ########### Footer End ########### -->
 
-  <script>
+    <script>
+      const menu = document.querySelector("#hidden_element");
+      let clicked = true;
+      function myFunction(x) {
+        if (clicked) {
+          menu.style.display = "block";
+          clicked = false;
+        } else {
+          menu.style.display = "none";
+          clicked = true;
+        }
+        x.classList.toggle("fa-xmark");
+      }
 
-    const menu = document.querySelector("#hidden_element");
-    let clicked = true;
-    function myFunction(x) {
-      if (clicked) {
-        menu.style.display = "block";
-        clicked = false;
+      const firstMenu = document.querySelector("#hidden_bar");
+      let isClicked = true;
+      function firstFunction() {
+        if (isClicked) {
+          firstMenu.style.display = "block";
+          isClicked = false;
+        } else {
+          firstMenu.style.display = "none";
+          isClicked = true;
+        }
       }
-      else {
-        menu.style.display = "none";
-        clicked = true;
-      }
-      x.classList.toggle("fa-xmark");
-    }
-
-    const firstMenu = document.querySelector("#hidden_bar");
-    let isClicked = true;
-    function firstFunction() {
-      if (isClicked) {
-        firstMenu.style.display = "block";
-        isClicked = false;
-      }
-      else {
-        firstMenu.style.display = "none";
-        isClicked = true;
-      }
-    }
-    document
-      .querySelector("#search_icon")
-      .addEventListener('click', ev => ev.target.style.display = "none");
-  </script>
-</body>
-
+      document
+        .querySelector("#search_icon")
+        .addEventListener("click", (ev) => (ev.target.style.display = "none"));
+    </script>
+  </body>
 </html>

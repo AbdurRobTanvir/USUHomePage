@@ -5,12 +5,12 @@ body{
     background-color: #000000;
 }
 .header img{
-    height: 30px;
-    width: 100px;
+    height: 29px;
+    width: auto;
 }
 .header i{
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 30px;
 }
 .header a{
     display: block;
@@ -73,18 +73,15 @@ body{
 .club-card .details{
     width: 93%;
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
 }
 .club-card a{
-    display: block;
+    display: inline-block;
     text-decoration: none !important;
     color: #ffffff;
 }
 .club-card a:hover{
     color: #ffffff;
-}
-.club-card .card-link{
-    width: 200px;
 }
 .explore-card{
     position: relative !important;
@@ -93,7 +90,7 @@ body{
     display: block;
     position: absolute;
     bottom: 4%;
-    right: 8%;
+    right: 12%;
     color: #000000;
 }
 .explore-card a:hover{
@@ -101,6 +98,10 @@ body{
 }
 .explore-card img{
     width: 100%;
+}
+.explore-card .details {
+    font-size: 14px;
+    min-height: 65px;
 }
 .carousel-inner img {
     width: 100%;
@@ -116,49 +117,34 @@ body{
 }
 .carousel-caption{
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 130px;
 }
 .carousel-caption a{
-    display: block;
+    display: inline-block;
     text-decoration: none !important;
-}
-.carousel-link{
-    width: 200px;
 }
 .mobile-web-icon{
     display: none;
 }
-.mobile-web-icon a{
-    display: block;
-}
-.web-icon a{
+.icon a{
     display: block;
 }
 .mobile-promotion{
     display: block;
 }
-.mobile-promotion-bg{
-    background-image: url(images/Web-Mob-750x280.png);
-    background-size: 100% 100%;
+.mobile-promotion img{
+    width: 100%;
+    height: 150px;
+}
+.desktop-promotion img{
+    width: 100%;
     height: 150px;
 }
 .desktop-promotion{
     display: none;
-    max-width: 1140px;
-    margin: 0 auto;
 }
-.desktop-promotion-bg{
-    background-image: url(images/Web-Desktop1080x180.png);
-    background-size: 100% 100%;
-    height: 150px;
-}
-.tablet-promotion{
-    display: none;
-}
-.tablet-promotion-bg{
-    background-image: url(images/Web-Desktop1080x180.png);
-    background-size: 100% 100%;
-    height: 150px;
+.footer{
+    font-size: 18px;
 }
 .footer a{
     display: block;
@@ -189,7 +175,7 @@ hr{
     .club-card .card-element{
         padding: 0;
     }
-    .large-explore-card{
+    .large-explore{
         display: none;
     }
     .large-carousel{
@@ -206,7 +192,7 @@ hr{
     .large-carousel{
         display: none;
     }
-    .mobile-explore-card{
+    .mobile-explore{
         display: none;
     }
 }
@@ -221,10 +207,10 @@ hr{
         bottom: 0;
         top: 4%;
     }
-    .mobile-explore-card{
+    .mobile-explore{
         display: none;
     }
-    .large-explore-card .details{
+    .explore-card .details{
         min-height: 65px;
     }
     .large-carousel{
@@ -234,15 +220,12 @@ hr{
         font-size: 55px;
     }
     .carousel-caption{
-        margin-bottom: 225px;
-    }
-    .carousel-link{
-        width: 280px;
+        margin-bottom: 280px;
     }
     .mobile-promotion{
         display: none;
     }
-    .tablet-promotion{
+    .desktop-promotion{
         display: block;
     }
     .horizontal-line{
@@ -256,20 +239,17 @@ hr{
     .mobile-search-bar{
         display: none;
     }
-    .mobile-explore-card{
+    .mobile-explore{
         display: none;
     }
-    .large-explore-card .title{
+    .explore-card .title{
         min-height: 70px;
     }
-    .large-explore-card .details{
+    .explore-card .details{
         min-height: 110px;
     }
     .carousel-heading{
         font-size: 67px;
-    }
-    .carousel-link{
-        width: 380px;
     }
     .carousel-caption{
         margin-bottom: 20px;
@@ -277,14 +257,14 @@ hr{
     .mobile-carousel{
         display: none;
     }
+    .desktop-promotion{
+        display: block;
+    }
     .mobile-promotion{
         display: none;
     }
-    .tablet-promotion{
-        display: block;
-    }
     .horizontal-line{
-        display: none;
+        display: block;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -295,12 +275,12 @@ hr{
         display: none;
     }
     .club-card .details{
-        bottom: 15%;
+        bottom: 30%;
     }
-    .mobile-explore-card{
+    .mobile-explore{
         display: none;
     }
-    .large-explore-card .details{
+    .explore-card .details{
         min-height: 90px;
     }
     .carousel-heading{
@@ -308,9 +288,6 @@ hr{
     }
     .carousel-caption{
         margin-bottom: 80px;
-    }
-    .carousel-link{
-        width: 330px;
     }
     .mobile-carousel{
         display: none;
@@ -320,9 +297,6 @@ hr{
     }
     .desktop-promotion{
         display: block;
-    }
-    .tablet-promotion{
-        display: none;
     }
     .horizontal-line{
         display: none;
@@ -334,8 +308,5 @@ hr{
     }
     .carousel-caption{
         margin-bottom: 150px;
-    }
-    .carousel-link{
-        width: 380px;
     }
 }
